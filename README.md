@@ -1,2 +1,19 @@
-# tiny-kernel
-Small 32-bit C + ASM kernel booted by GRUB. Minimal VGA text output and clean build
+# Tiny C + ASM Kernel (Multiboot)
+
+Small 32-bit kernel built with NASM + GCC and booted by GRUB.
+
+## Build
+Requirements:
+- gcc (with multilib)
+- nasm
+- grub-mkrescue
+- qemu-system-i386
+
+```bash
+make
+make run
+```
+
+## Output
+- build/kernel.elf
+- dist/os.iso
